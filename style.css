@@ -1,7 +1,22 @@
 body {
-    background-color: lightpink;
+    background-color: darkgrey;
 }
 
 ul {
     list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 3px black solid;
+}
+
