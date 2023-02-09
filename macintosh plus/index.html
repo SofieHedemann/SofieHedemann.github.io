@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Orbitron:wght@700&family=Palanquin:wght@500&family=Rubik+Glitch&family=Silkscreen&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <nav>
+        <div id="menuToggle">
+            <!-- https://codepen.io/erikterwan/pen/EVzeRP -->
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox">
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><img class="machintosh__logo" src="img/logo.png" alt="macintosh logo" class="logo"></li>
+            </ul>
+        </div>
+    </nav>
+
+<main class="forside">
+
+    <!-- Aside til Computer Størrelse--> 
+    <aside class="feed__main feed__mobile__hide">
+        <h1 class="feed__title">Social Media</h1>
+        
+        <article class="feed__bandcamp">
+            <a class="feed__bandcamp__link" href="https://vektroid.bandcamp.com/album/floral-shoppe" target="_blank">Bandcamp</a>
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=571360365/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"><a href="https://vektroid.bandcamp.com/album/floral-shoppe">Floral Shoppe by Macintosh Plus</a></iframe>
+        </article>
+
+        <article class="feed__twitter">
+                <a class="feed__twitter__link" href="https://twitter.com/vektroid" target="_blank">Twitter News</a>
+                <img class="feed__twitter__profile" src="img/fronttwitterpersonal.png" alt="Vectroid logo og avatar">
+        </article>
+
+        <article class="feed__twitter">
+                <a class="feed__twitter__link" href="https://twitter.com/vektroidlive" target="_blank">Twitter Rara</a>
+                <img class="feed__twitter__profile" src="img/fronttwitterrara.jpeg" alt=" logo vectroid rara ">
+        </article>
+
+        <article class="feed__twitch">
+            <a class="feed__twitch__link" href="" target="_blank">Twitch</a>
+            <img class="feed__twitch__vtupe" src="img/transparentvek.png" alt="vektroid as a v-tuber, short red hair with a red cropped jacket">
+            <a class="feed__twitch__link--purple" href="https://www.twitch.tv/vektroidlive" target="_blank" class="twitchlink">Twitch</a>
+            <p class="feed__twitch__text">Official Twitch channel of Ramona Langley AKA </p>
+            <p class="feed__twitch__text"> Vektroid / Creator of Macintosh Plus,</p>
+            <p class="feed__twitch__text">New Dreams Ltd., and a bunch of other crap </p>
+            <a class="feed__twitch__patreon" href="https://www.patreon.com/vektroid" target="_blank" class="twitchlink">Patreon</a>
+            <a class="feed__twitch__bandcamp" href="https://vektroid.bandcamp.com" target="_blank" class="twitchlink">Bandcamp</a>
+            <a class="feed__twitch__email" href="mailto: vektroid@gmail.com">Send email</a>
+        </article>
+
+        <article class="feed__lastpicture">
+            <img src="img/lastpictothefeed.png" alt="billede">
+        </article>
+    </aside>
+    <!-- Stopper her--> 
+
+    <section class="forside__flex">
+        <img src="img/frontbanner.png" alt="banner" class="forside__banner">
+
+        <article class="about__band">
+            <article class="about__band__text">
+                <h1 class="about__band__header">About Album</h1>
+                <p class="about__band__body">The Macintosh Plus Floral Shoppe album is already a pop 
+                culture icon at this point. The memorable cover art, with 
+                its genre-specific aesthetics, has become a fixture on 
+                posters and t-shirts.
+            
+                Musically the album refers to the end of the 80s and the 
+                beginning of the 90s. It is an imaginary nostalgia for 
+                those times, the times from the beginning of the Internet era. 
+                The album contains a lot of music samples from that period. 
+                They are subjected to classic treatments characteristic for 
+                the genre: looping, slowing down. The sound structure is 
+                blurred and rearranged. The compositions gain a new context, 
+                they also offer new emotions and associations. 
+                It is an amazing kind of musical deconstruction.</p>
+            </article>
+                <img class="about__band__image" src="img/statuenobackground.png" alt="pink statue" class="pinkstatue">
+        </article>
+
+        <article class="about__artist">
+            <img class="about__artist__image" src="img/transparentvek.png" alt="anime vektroid transparent" class="anime">
+            <article class="about__artist__text">
+                <h1 class="about__artist__header">About Artist</h1>
+                <p class="about__artist__body">Ramona Andra Xavier (born August 19, 1992) is an American electronic 
+                musician from Portland, Oregon. She has released music under her 
+                primary Vektroid alias, as well as others, such as dstnt, 
+                Laserdisc Visions, New Dreams Ltd., Virtual Information Desk, 
+                and PrismCorp Virtual Enterprises. Xavier played a prominent 
+                role in the popularization of the vaporwave subgenre with the 
+                release of her first studio album, Floral Shoppe, under the alias 
+                Macintosh Plus. The album helped popularize the vaporwave genre 
+                throughout the Internet. Since then, she has continued to release 
+                music through Bandcamp and other online platforms.</p>
+            </article>
+        </article>
+
+        <section class="section__flex">
+
+            <section class="forside__vekroid__section">
+                <img class="forside__vekroid__section__selfie" src="img/Vektroid.jpeg" alt="Billede af Vektroid">
+                <img class="forside__vekroid__section__logo" src="img/vektroidlogo.png" alt="vektroid logo">
+            </section>
+
+            <img class="forside__bottom__gif" src="img/giphy.gif" alt="glitch art" class="giphy">
+        </section>
+
+        <!-- Dette er til telefon størrelsen --> 
+
+        <section class="mobilforside__album__cover">
+            <img class="mobilforside__album__cover" src="img/albumcover.gif" alt="Floral Shop album cover gif ">
+        </section>
+
+
+            
+            <section class="mobil__main__socials">
+                    <h1 class="mobil__socials__header">Socials</h1>
+                <section class="mobil__socials">
+                    
+                        <a class="mobil__socials__links" href="https://twitter.com/vektroidlive" title="Twitter Rara" target="_blank">
+                            <img class="mobil__socials__images" src="/img/twitterlogo.gif" alt="twitter bird logo">
+                        </a>
+                    
+                        <a class="mobil__socials__links" href="https://vektroid.bandcamp.com/" title="Bandcamp" target="_blank">
+                            <img class="mobil__socials__images" src="img/bandcampbutton.png" alt="logo bandcamp">
+                        </a>
+                    
+                        <a class="mobil__socials__links" href="https://twitter.com/vektroid" title="Twitter News" target="_blank">
+                            <img class="mobil__socials__images" src="/img/twitterlogo.gif" alt="vektroid personal twitter profile">
+                        </a>
+                    
+                        <a class="mobil__socials__links" href="https://www.twitch.tv/vektroidlive" title="Twitch" target="_blank">
+                            <img class="mobil__socials__images" src="img/twitch.png" alt="">    
+                        </a>
+                    
+                </section>
+            </section>
+    </section>
+
+</main>
+
+    <footer class="footer">
+        <p>Vektroid</p>
+        <a href="https://vektroid.bandcamp.com" target="_blank">Bandcamp</a>
+    </footer>
+
+</body>
+</html>
