@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;700&family=Roboto+Slab:wght@200;400;500;800&display=swap');
+
+/* Reset default style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 1rem;
+    background-image: linear-gradient(150deg,#394B9F, #8172CE,#B490CA), url(images/stars.png);
+    background-attachment: fixed;
+}
+
+/* Nav bar */
+ul {
+    display:flex;
+    gap: 3rem;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.navMenu__link {
+    text-decoration: none;
+    color: #deded9;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.navMenu__link:hover {
+    border-bottom: 2px lightblue solid;
+}
+
+/* Main page section */
+.welcome__noshow {
+    visibility: hidden;
+}
+
+.welcome {
+    margin: 0 auto;
+    background: rgba(231, 242, 252, 0.471);
+    box-shadow: 0 8px 32px 0 #473255;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border-radius: 10px;
+    max-width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-radius: 6rem;
+    height:80vh;
+    width:80%;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    margin: 1rem;
+}
+
+.welcome__header {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3rem; 
+    color: orange; 
+}
+
+.welcome__body {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+.welcome__Button {
+    background-image: linear-gradient(150deg,#394B9F 5%, #8172CE 60%,#B490CA 99%);
+    color: #deded9;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    width: 20%;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: 1px 8px 32px 1px #49494926;
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+}
+
+
+.welcome__Button:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+.welcome__rectangel {
+    background-color:#290867;
+    height: 80vh;
+    position: absolute;
+    width:171px;
+    border-radius:0px 72px 72px 0px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    background: conic-gradient(from 180deg, #ce8172, #b97467, #a5675b);
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px 0 currentColor;
+}
+
+/* Footer */
+footer {
+    display: flex; 
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialMedia--img {
+    width: 1.5rem; 
+  }
