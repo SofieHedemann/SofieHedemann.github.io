@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;700&family=Roboto+Slab:wght@200;400;500;800&display=swap');
 
+/* ROOT */
+:root {
+  --primary-btn: #002b55;
+  --primary-background: linear-gradient(150deg,#394B9F, #8172CE,#B490CA);
+  --primary-header: #002b55;
+  --primary-section: ;
+
+  --primary--font: ;
+}
+
 /* Reset default style */
 * {
     margin: 0;
@@ -9,14 +19,14 @@
 body{
     margin-top: 3rem;
     margin-right: 1rem;
-    background-image: linear-gradient(150deg,#394B9F, #8172CE,#B490CA), url(images/stars.png);
+    background-image: var(--primary-background);
     background-attachment: fixed;
 }
 
 /* Nav bar */
 header {
     margin-top: .5rem;
-    background-color: #002b55;
+    background-color: var(--primary-header);
     box-shadow: 0 8px 32px 0 rgba(129, 129, 129, 0.219);
     width: 16rem;
     height: 100vh;
@@ -104,7 +114,7 @@ header {
 
 .welcome__Button {
     /* background-image: linear-gradient(150deg,#394B9F 5%, #8172CE 60%,#B490CA 99%); */
-    background-color: #002b55;
+    background-color: var(--primary-btn);
     color: #deded9;
     border: none;
     border-radius: 24px;
