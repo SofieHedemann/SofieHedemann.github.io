@@ -3,12 +3,46 @@
 /* ROOT */
 :root {
   --primary-btn: #002b55;
-  --primary-background: linear-gradient(150deg,#394B9F, #8172CE,#B490CA);
+  --darkmode-background: linear-gradient(150deg,#394B9F, #8172CE,#B490CA);
+  --lightmode-background: linear-gradient(150deg, #D66562, #F17D78, #FFB2AB);
   --primary-header: #002b55;
   --primary-section: ;
 
   --primary--font: ;
 }
+
+.day {
+  background: var(--lightmode-background) no-repeat fixed center;
+  color: black;
+  object-fit:fill;
+}
+.night {
+  background: var(--darkmode-background) no-repeat fixed center;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme {
+    background: var(--darkmode-background);
+    color: white;
+  }
+  .night.dark-scheme {
+    background: var(--lightmode-background);
+    color: #ddd;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme {
+    background: white;
+    color: #555;
+  }
+  .night.light-scheme {
+    background: #eee;
+    color: black;
+  }
+}
+  
 
 /* Reset default style */
 * {
@@ -16,22 +50,79 @@
     padding: 0;
 }
 
-body{
-    margin-top: 3rem;
-    margin-right: 1rem;
-    background-image: var(--primary-background);
-    background-attachment: fixed;
+/* toggle */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gold;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #a8c8e2;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 50px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* Nav bar */
-header {
+/* header {
     margin-top: .5rem;
     background-color: var(--primary-header);
     box-shadow: 0 8px 32px 0 rgba(129, 129, 129, 0.219);
     width: 16rem;
     height: 100vh;
     border-top-right-radius: 2rem;
-  }
+  } */
 
   .nav__header {
     color: white;
@@ -198,5 +289,5 @@ header {
   }
   
   .socialMedia--img {
-    width: 1.5rem; 
-  }
+    width: 1.5rem;
+  } 
