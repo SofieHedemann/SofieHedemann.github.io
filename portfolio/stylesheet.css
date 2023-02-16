@@ -38,12 +38,24 @@ a {
   font-family: 'Roboto Slab', serif;
 }
 
+img {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+h2 {
+  text-align: center;
+  color: orangered;
+}
+
 /* - - - - - NAV - - - - - */
 
 .nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 } 
 
 .nav__items {
