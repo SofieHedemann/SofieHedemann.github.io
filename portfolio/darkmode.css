@@ -1,0 +1,94 @@
+@media (prefers-color-scheme: dark) {
+    .night {
+      background: var(--darkmode-background);
+      height: 100vh;
+    }
+
+    /* - - - - FORSIDE TEKST - - - - - */
+  .welcome__text--night {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    margin: 1rem;
+  }
+
+.welcome__header--night {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 3rem; 
+    color: #faeceb;
+  }
+
+.welcome__body--night {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #faeceb;
+  }
+
+  /* - - - - - forside - - - - - */
+
+  .welcome--night {
+      margin: 3rem auto;
+      background: var(--night-section);
+      box-shadow: 0 8px 32px 0 rgba(129, 129, 129, 0.219);
+      backdrop-filter: blur(13px);
+      -webkit-backdrop-filter: blur(13px);
+      border-radius: 10px;
+      max-width: 100%;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+      border-radius: 6rem;
+      height:80vh;
+      width:80%;
+  }
+
+  .welcome__Button--night {
+    background-color: var(--night-btn);
+    color: #deded9;
+    border: none;
+    border-radius: 44px;
+    font-weight: bold;
+    width: 12rem;
+    padding: 0.9rem;
+    cursor: pointer;
+    box-shadow: 1px 8px 32px 1px #141e307a;
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+  }
+
+
+.welcome__Button--night:hover {
+    box-shadow: 0 1px 30px #4286f4;
+    transition-duration: .1s;
+  }
+
+.welcome__rectangel--night {
+    background-color: var(--night-header);
+    height: 80vh;
+    position: absolute;
+    width:171px;
+    border-radius:0px 72px 72px 0px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+.circle--night {
+    background: conic-gradient(from 180deg, #ce8172, #b97467, #a5675b);
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 12px 0 var(--night-section);
+  }
+  }
