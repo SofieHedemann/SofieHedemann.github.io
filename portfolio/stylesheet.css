@@ -10,7 +10,7 @@
 
   /* - - - - - DAY - - - - - */
   --day-btn: #672e2e;
-  --lightmode-background: linear-gradient(150deg, #D66562, #F17D78, #FFB2AB);
+  --lightmode-background: linear-gradient(150deg, #f46b45, #ff6e7f, #ddd6f3);
   --day-header: #672e2e;
   --day-section: rgba(103, 46, 46, 0.24); 
   --primary--font: #FAECEB;
@@ -83,3 +83,21 @@ footer {
 .socialMedia--img {
   width: 1.5rem;
 } 
+
+.welcome {
+  background: rgba(189, 189, 189, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(189, 189, 189, 0.3);
+  max-width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 6rem;
+  height:80vh;
+  width:80%;
+  margin: 3rem auto;
+}

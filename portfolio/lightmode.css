@@ -30,23 +30,6 @@
 
   /* - - - - - forside - - - - - */
 
-  .welcome--day {
-      margin: 3rem auto;
-      background: var(--day-section);
-      box-shadow: 0 8px 32px 0 rgba(129, 129, 129, 0.219);
-      backdrop-filter: blur(13px);
-      -webkit-backdrop-filter: blur(13px);
-      border-radius: 10px;
-      max-width: 100%;
-      gap: 1rem;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 2rem;
-      border-radius: 6rem;
-      height:80vh;
-      width:80%;
-  }
-
   .welcome__Button--day {
     background-color: var(--day-btn);
     color: #deded9;
