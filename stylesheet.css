@@ -4,13 +4,13 @@
 :root {
   /* - - - - - NIGHT - - - - - */
   --night-btn: #002b55;
-  --darkmode-background: linear-gradient(150deg,#330867 0%, #394b9f 44.84%, #8172ce 72.74%, #b490ca 100%);
+  --darkmode-background: linear-gradient(150deg,#0F2027, #203A43, #2C5364);
   --night-header: #002b55;
   --night-section: #b3b3b34a;
 
   /* - - - - - DAY - - - - - */
   --day-btn: #672e2e;
-  --lightmode-background: linear-gradient(150deg, #f46b45, #ff6e7f, #ddd6f3);
+  --lightmode-background: linear-gradient(150deg, #FF512F, #F37335, #F0C27B);
   --day-header: #672e2e;
   --day-section: rgba(103, 46, 46, 0.24); 
   --primary--font: #FAECEB;
@@ -24,6 +24,7 @@
 
 body {
   margin: 1rem;
+  max-width: 100%;
 }
 
 h1 {
@@ -38,15 +39,14 @@ a {
   font-family: 'Roboto Slab', serif;
 }
 
-img {
+/* img {
   display: block;
   margin: auto;
   width: 25%;
-}
+} */
 
 h2 {
-  text-align: center;
-  color: orangered;
+  color: white;
 }
 
 /* - - - - - NAV - - - - - */
@@ -100,4 +100,36 @@ footer {
   height:80vh;
   width:80%;
   margin: 3rem auto;
+}
+
+.schoolProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.schoolProjects__figures {
+  border: thin #c0c0c0 solid;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 25%;
+  margin-bottom: 2rem;
+}
+
+.schoolProjects__images {
+  height: -webkit-fill-available;
+  object-fit: cover;
+}
+
+figcaption {
+  padding: 3px;
+  place-self: center;
+  text-align: center;
+}
+
+.schoolProjects__links {
+  text-decoration: none;
+  color: white;
 }

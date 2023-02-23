@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="lightmode.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Forside</title>
 </head>
-<body>
-    <h1>Hej, du kan finde mine andre sider nedenunder 😎</h1>
-    <ul>
-        <li>
-            <a href="macintosh plus/index.html">Macintosh Plus</a>
-        </li>
-        <li>
-            <a href="swipbox/index.html">Nærboks</a>
-        </li>
-        <li>
-            <a href="portfolio/index.html">Læringsportfolio</a>
-        </li>
-        <li>
-            <a href="FriendsToMeet/loginpage.html">Friends to Meet</a>
-        </li>
-    </ul>
+<body class="day night">
+
+<article class="welcome">
+    <section class="welcome__text--day welcome__text--night">
+        <h1 class="welcome__header--day welcome__header--night">Overskrift</h1>
+        <p class="welcome__body--day welcome__body--night">Undertekst hej, dette er min læringsportfolio </p>
+        <button id="myBtn" class="welcome__Button--day welcome__Button--night">Tryk</button>
+    </section>
+    <section class="welcome__rectangel--day welcome__rectangel--night">
+        <section class="circle--day circle--night"></section>
+        <section class="circle--day circle--night"></section>
+    </section>
+</article>
+
+<footer>
+    <a href="https://www.linkedin.com/in/sofie-hedemann/">
+        <img class="socialMedia--img" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+    </a>
+    <p>Indsæt SoMe kanaler hernede</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
