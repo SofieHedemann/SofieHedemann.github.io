@@ -37,13 +37,9 @@ p {
 
 a {
   font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  color: white;
 }
-
-/* img {
-  display: block;
-  margin: auto;
-  width: 25%;
-} */
 
 h2 {
   color: white;
@@ -116,20 +112,21 @@ footer {
   padding: 5px;
   max-width: 25%;
   margin-bottom: 2rem;
+  background-color: transparent;
 }
 
 .schoolProjects__images {
   height: -webkit-fill-available;
   object-fit: cover;
+  opacity: .9;
+}
+
+.schoolProjects__images:hover {
+  opacity: 1;
 }
 
 figcaption {
   padding: 3px;
   place-self: center;
   text-align: center;
-}
-
-.schoolProjects__links {
-  text-decoration: none;
-  color: white;
 }
