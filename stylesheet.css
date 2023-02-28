@@ -118,11 +118,11 @@ footer {
 .schoolProjects__images {
   height: -webkit-fill-available;
   object-fit: cover;
-  opacity: .9;
+  opacity: 1;
 }
 
 .schoolProjects__images:hover {
-  opacity: 1;
+  opacity: .5;
 }
 
 figcaption {
