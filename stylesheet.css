@@ -29,6 +29,7 @@ body {
 
 h1 {
   font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
 } 
 
 p {
@@ -43,6 +44,7 @@ a {
 
 h2 {
   color: white;
+  font-size: 20px;
 }
 
 /* - - - - - NAV - - - - - */
@@ -109,11 +111,9 @@ footer {
   border: thin #c0c0c0 solid;
   border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
   flex-flow: column;
-  padding: 5px;
-  
   margin-bottom: 2rem;
+  width: calc(100% / 3 - 1rem);
   background-color: transparent;
   height: 280px;
 }
@@ -121,12 +121,8 @@ footer {
 .schoolProjects__images {
   height: -webkit-fill-available;
   object-fit: cover;
-  opacity: 1;
   height: 250px;
-}
-
-.schoolProjects__images:hover {
-  opacity: .5;
+  border-radius: 12px;
 }
 
 figcaption {
@@ -137,8 +133,18 @@ figcaption {
 
 /* - - - - - SLIDER/CARUSSEL - - - - - */
 
+.carussel--text {
+  padding-top: .5rem;
+  padding-left: 2.6rem;
+}
+
+.carussel--header {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
 .slider-wrapper {
-  margin: 1rem;
+  margin-top: .5rem;
   position: relative;
   overflow: hidden;
 }
@@ -149,6 +155,7 @@ figcaption {
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -209,3 +216,4 @@ figcaption {
 .slide:nth-child(4) {
   background-color: #da6f2b;
 }
+
