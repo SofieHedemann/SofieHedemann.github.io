@@ -24,7 +24,7 @@
 
 body {
   margin: 1rem;
-  max-width: 100%;
+  max-width: 1440px;
 }
 
 h1 {
@@ -98,6 +98,7 @@ footer {
   margin: 3rem auto;
 }
 
+/* PORTFOLIO SIDE */
 .schoolProjects {
   display: flex;
   flex-wrap: wrap;
@@ -108,17 +109,20 @@ footer {
   border: thin #c0c0c0 solid;
   border-radius: 12px;
   display: flex;
+  flex-wrap: wrap;
   flex-flow: column;
   padding: 5px;
-  max-width: 25%;
+  
   margin-bottom: 2rem;
   background-color: transparent;
+  height: 280px;
 }
 
 .schoolProjects__images {
   height: -webkit-fill-available;
   object-fit: cover;
   opacity: 1;
+  height: 250px;
 }
 
 .schoolProjects__images:hover {
@@ -129,4 +133,79 @@ figcaption {
   padding: 3px;
   place-self: center;
   text-align: center;
+}
+
+/* - - - - - SLIDER/CARUSSEL - - - - - */
+
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+  
+.slides-container {
+  height: calc(100vh / 2);
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.slide-arrow {
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 100ms;
+}
+  
+.slide-arrow:hover,
+.slide-arrow:focus {
+  opacity: 1;
+}
+  
+.slide-arrow-prev {
+  left: 0;
+  padding-left: 0.25rem;
+  border-radius: 0 2rem 2rem 0;
+}
+  
+.slide-arrow-next {
+  right: 0;
+  padding-left: 0.75rem;
+  border-radius: 2rem 0 0 2rem;
+}
+  
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+  
+.slide:nth-child(1) {
+  background-color: #49b293;
+}
+  
+.slide:nth-child(2) {
+  background-color: #b03532;
+}
+  
+.slide:nth-child(3) {
+  background-color: #6a478f;
+}
+  
+.slide:nth-child(4) {
+  background-color: #da6f2b;
 }
