@@ -51,6 +51,24 @@ h2 {
   font-size: 20px;
 }
 
+.welcome {
+  background: var(--background-section);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(189, 189, 189, 0.3);
+  max-width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 6rem;
+  height:80vh;
+  width:80%;
+  margin: 3rem auto;
+}
+
 /* - - - - - NAV - - - - - */
 
 .nav-logo {
@@ -108,24 +126,6 @@ footer {
 .socialMedia--img {
   width: 1.5rem;
 } 
-
-.welcome {
-  background: var(--background-section);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(189, 189, 189, 0.3);
-  max-width: 100%;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  border-radius: 6rem;
-  height:80vh;
-  width:80%;
-  margin: 3rem auto;
-}
 
 /* PORTFOLIO SIDE */
 .schoolProjects {
@@ -268,7 +268,6 @@ figcaption {
 /* - - - - - MEDIA QUERIES - - - - - */
 
 @media only screen and (max-width: 768px) {
-
   .welcome__header--day, 
   .welcome__header--night {
     font-size: 40px;
