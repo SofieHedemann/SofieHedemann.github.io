@@ -288,6 +288,7 @@ figcaption {
   .welcome {
     height: 80vh;
     width: 80%;
+    border-radius: 12px;
   }
 
   /* - - - - - NAV - - - - - */
