@@ -1,11 +1,16 @@
 @media (prefers-color-scheme: light) {
-
-  .nav-menu--day {
+:root {
+  --btn: #672e2e;
+  --background: linear-gradient(150deg, #FF512F, #F37335, #F0C27B);
+  --header: #672e2e;
+  --section: rgba(103, 46, 46, 0.24); 
+}
+  .nav-menu.active {
     background-color: hsla(20, 89%, 58%, 0.8);
   }
 
-  .day {
-    background: var(--lightmode-background);
+  body {
+    background: var(--background);
   }
 
   /* - - - - - forside tekst - - - - - */
@@ -35,7 +40,7 @@
   /* - - - - - forside - - - - - */
 
   .welcome__Button--day {
-    background-color: var(--day-btn);
+    background-color: var(--btn);
     color: #deded9;
     border: none;
     border-radius: 24px;
@@ -57,7 +62,7 @@
   }
 
 .welcome__rectangel--day {
-    background-color: var(--day-header);
+    background-color: var(--header);
     height: 80vh;
     position: absolute;
     width:171px;
@@ -75,7 +80,7 @@
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px 0 var(--day-section);
+    box-shadow: 0px 3px 12px 0 var(--section);
   }
 
 }

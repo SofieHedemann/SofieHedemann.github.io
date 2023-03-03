@@ -1,9 +1,16 @@
 @media (prefers-color-scheme: dark) {
-    .night {
-      background: var(--darkmode-background);
+    :root {
+      --btn: #002b55;
+      --background: linear-gradient(150deg,#0F2027, #203A43, #2C5364);
+      --header: #002b55;
+      --section: #b3b3b34a;
+    }  
+
+    body {
+      background: var(--background);
     }
 
-    .nav-menu--night {
+    .nav-menu.active {
       background-color: hwb(194 12% 75% / 0.8);
     }
 
@@ -35,7 +42,7 @@
   /* - - - - - forside - - - - - */
 
   .welcome__Button--night {
-    background-color: var(--night-btn);
+    background-color: var(--btn);
     color: #deded9;
     border: none;
     border-radius: 44px;
@@ -57,7 +64,7 @@
   }
 
 .welcome__rectangel--night {
-    background-color: var(--night-header);
+    background-color: var(--header);
     height: 80vh;
     position: absolute;
     width:171px;
@@ -75,6 +82,6 @@
     height: 110px;
     width: 110px;
     border-radius: 50%;
-    box-shadow: 0px 3px 12px 0 var(--night-section);
+    box-shadow: 0px 3px 12px 0 var(--section);
   }
   }

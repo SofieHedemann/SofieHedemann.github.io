@@ -2,21 +2,11 @@
 
 /* ROOT */
 :root {
-  /* - - - - - NIGHT - - - - - */
-  --night-btn: #002b55;
-  --darkmode-background: linear-gradient(150deg,#0F2027, #203A43, #2C5364);
-  --night-header: #002b55;
-  --night-section: #b3b3b34a;
-
-  /* - - - - - DAY - - - - - */
-  --day-btn: #672e2e;
-  --lightmode-background: linear-gradient(150deg, #FF512F, #F37335, #F0C27B);
-  --day-header: #672e2e;
-  --day-section: rgba(103, 46, 46, 0.24); 
-  --primary--font: #FAECEB;
-
   /* - - - - - Regular - - - - - */
   --background-section: rgba(189, 189, 189, 0.2); 
+
+  /* - - - - - FONT COLORS - - - - - */
+  --primary-fontColor: #FAECEB;
 }
 
 /* Reset default style */
@@ -28,13 +18,17 @@
 body {
   margin: 1rem;
   max-width: 1440px;
-  max-height: 100%;
 }
 
 h1 {
   font-family: 'Hanken Grotesk', sans-serif;
-  color: white;
+  color: var(--primary-fontColor);
 } 
+
+h2 {
+  color: var(--primary-fontColor);
+  font-size: 20px;
+}
 
 p {
   font-family: 'Roboto Slab', serif;
@@ -44,11 +38,6 @@ a {
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
   color: var(--primary--font);
-}
-
-h2 {
-  color: var(--primary--font);
-  font-size: 20px;
 }
 
 .welcome {
@@ -68,6 +57,7 @@ h2 {
   width:80%;
   margin: 3rem auto;
 }
+
 
 /* - - - - - NAV - - - - - */
 
@@ -91,7 +81,7 @@ h2 {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--primary--font);
+  background-color: var(--primary-fontColor);
 }
 
 .nav-menu {
