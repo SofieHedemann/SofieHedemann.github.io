@@ -10,11 +10,12 @@
   }
 
   body {
-    background: var(--background);
+    background-image: var(--background);
+    height: 100vh;
   }
 
   /* - - - - - forside tekst - - - - - */
-  .welcome__text--day {
+  .welcome__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +24,7 @@
     margin: 1rem;
   }
 
-.welcome__header--day {
+.welcome__header {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -32,14 +33,14 @@
   }
 
   
-.welcome__body--day {
+.welcome__body {
     font-weight: 400;
     color: #faeceb;
   }
 
   /* - - - - - forside - - - - - */
 
-  .welcome__Button--day {
+  .welcome__Button {
     background-color: var(--btn);
     color: #deded9;
     border: none;
@@ -55,13 +56,12 @@
     transition: all .5s;
   }
 
-
-.welcome__Button--day:hover {
-    box-shadow: #844040 0 1px 30px;
+  .welcome__Button:hover {
+    box-shadow: 0 1px 30px #F08080;
     transition-duration: .1s;
   }
 
-.welcome__rectangel--day {
+.welcome__rectangel {
     background-color: var(--header);
     height: 80vh;
     position: absolute;
@@ -75,7 +75,7 @@
     justify-content: center;
   }
 
-.circle--day {
+.circle {
     background: conic-gradient(from 180deg, #ce8172, #b97467, #a5675b);
     height: 110px;
     width: 110px;
