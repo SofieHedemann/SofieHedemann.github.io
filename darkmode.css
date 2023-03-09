@@ -2,16 +2,26 @@
     :root {
       --btn: #002b55;
       --background: linear-gradient(150deg,#0F2027, #203A43, #2C5364);
+      --secondary-background: #203A43;
       --header: #002b55;
       --section: #b3b3b34a;
     }  
 
     body {
-      background: var(--background);
+      background: var(--secondary-background);
+      margin: 1rem;
     }
 
     .nav-menu.active {
       background-color: hwb(194 12% 75% / 0.8);
+    }
+
+    .schoolProjects__links {
+      color: white;
+    }
+
+    footer p {
+      color: white;
     }
 
     /* - - - - FORSIDE TEKST - - - - - */
