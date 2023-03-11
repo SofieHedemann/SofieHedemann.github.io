@@ -103,9 +103,6 @@ a {
 }
 
 
-/* - - - - - NAV - - - - - */
-
-
 /* Footer */
 footer {
   display: flex; 
@@ -150,6 +147,60 @@ figcaption {
 
 
 /* - - - - - HTML PAGE - - - - - */
+
+.flipcard__body {
+  text-align: left;
+  margin: .5rem;
+}
+
+.flipcard__header {
+  margin: .5rem;
+}
+
+.flipcard__headerTop {
+  margin: 7rem;
+}
+
+.flipcard {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flipcard__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flipcard:hover .flipcard__inner {
+  transform: rotateY(180deg);
+}
+
+.flipcard__front, .flipcard__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flipcard__front {
+  background-color: var(--background-section);
+  color: black;
+}
+
+.flipcard__back {
+  background-color: var(--background-section);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* - - - - - - - - - - - - - */
+
 .html__overview {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -159,10 +210,7 @@ figcaption {
 
 .html__items {
   background-color: var(--background-section);
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 250px;
 }
 
 /* - - - - - SLIDER/CARUSSEL - - - - - */
@@ -286,7 +334,7 @@ figcaption {
 
   .welcome {
     height: 80vh;
-    width: 80%;
+    width: 95%;
     border-radius: 12px;
   }
 
@@ -375,7 +423,7 @@ figcaption {
 
   .welcome {
     height: 80vh;
-    width: 80%;
+    width: 95%;
     border-radius: 12px;
   }
 
