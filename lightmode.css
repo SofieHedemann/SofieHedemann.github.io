@@ -10,7 +10,9 @@
   }
 
   body {
-    background-image: var(--background);
+    background: var(--background) no-repeat;
+    background-color: lightgray;
+    min-height: 100vh;
     margin: 1rem;
     
   }

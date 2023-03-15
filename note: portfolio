@@ -1,0 +1,31 @@
+<h2 class="project--header">Skoleprojekter</h2>
+            <section class="schoolProjects">
+                    <figure class="schoolProjects__figures">
+                        <img class="schoolProjects__images" src="images/macintosh.png" alt="" srcset="">
+                        <figcaption><a class="schoolProjects__links" href="macintoshPlus/index.html" target="_blank">Macintosh Plus</a></figcaption>
+                    </figure>
+                    <figure class="schoolProjects__figures">
+                        <img class="schoolProjects__images" src="images/hamsterfriend.webp" alt="" srcset="">
+                        <figcaption><a class="schoolProjects__links" href="FriendsToMeet/loginpage.html" target="_blank">Friends to Meet</a></figcaption>
+                    </figure>
+                    <figure class="schoolProjects__figures">
+                        <img class="schoolProjects__images" src="images/swipbox.png" alt="" srcset="">
+                        <figcaption><a class="schoolProjects__links" href="swipbox/index.html" target="_blank">Nærboks</a></figcaption>
+                    </figure>
+            </section>
+
+        <h2>Læringsportfolio</h2>
+            <section class="schoolProjects">
+                <figure class="schoolProjects__figures">
+                    <img class="schoolProjects__images" src="images/html.png" alt="" srcset="">
+                    <figcaption><a class="schoolProjects__links" href="html.html">HTML</a></figcaption>
+                </figure>
+                <figure class="schoolProjects__figures">
+                    <img class="schoolProjects__images" src="images/css.png" alt="" srcset="">
+                    <figcaption><a class="schoolProjects__links" href="css.html">CSS</a></figcaption>
+                </figure>
+                <figure class="schoolProjects__figures">
+                    <img class="schoolProjects__images" src="images/javascript.png" alt="" srcset="">
+                    <figcaption><a class="schoolProjects__links" href="javascript.html">Javascript</a></figcaption>
+                </figure>
+            </section>

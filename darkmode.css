@@ -1,14 +1,16 @@
 @media (prefers-color-scheme: dark) {
     :root {
       --btn: #002b55;
-      --background: linear-gradient(150deg,#0F2027, #203A43, #2C5364);
+      --background: linear-gradient(#0F2027, #203A43, #2C5364);
       --secondary-background: #203A43;
       --header: #002b55;
       --section: #b3b3b34a;
     }  
 
     body {
-      background: var(--secondary-background);
+      background: var(--background)no-repeat;
+      background-color: lightgray;
+      min-height: 100vh;
       margin: 1rem;
     }
 

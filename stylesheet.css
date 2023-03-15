@@ -66,14 +66,6 @@ h2 {
   font-size: 20px;
 }
 
-.project--largeHeader {
-  margin-bottom: 1rem;
-}
-
-.project--header {
-  margin-bottom: .5rem;
-}
-
 p {
   font-family: 'Roboto Slab', serif;
 }
@@ -115,34 +107,40 @@ footer {
 } 
 
 /* PORTFOLIO SIDE */
-.schoolProjects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.project--largeHeader {
+  margin-bottom: 1rem;
 }
 
-.schoolProjects__figures {
-  border: thin #c0c0c0 solid;
-  border-radius: 12px;
-  display: flex;
-  flex-flow: column;
+.project--header {
+  grid-row-start: 1;
+  margin-bottom: .5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
   margin-bottom: 2rem;
-  width: calc(100% / 3 - (2rem / 3) - 2px);
-  height: 280px;
 }
 
 
-.schoolProjects__images {
-  height: -webkit-fill-available;
+.project {
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__link {
+  
+}
+
+
+.projects__image {
+  max-width: 100%;
+  width: 370px;
+  height: 180px;
   object-fit: cover;
-  height: 250px;
-  border-radius: 12px;
-}
-
-figcaption {
-  padding: 3px;
-  place-self: center;
-  text-align: center;
 }
 
 
