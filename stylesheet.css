@@ -137,8 +137,7 @@ footer {
 
 
 .projects__image {
-  max-width: 100%;
-  width: 370px;
+  width: max-content;
   height: 180px;
   object-fit: cover;
 }
@@ -213,37 +212,22 @@ footer {
 
 /* - - - - - SLIDER/CARUSSEL - - - - - */
 
-.carussel--text {
-  padding-top: .5rem;
-  padding-left: 2.6rem;
-}
-
-.slider--header {
-  margin-bottom: .5rem;
-}
-
-.carussel--header {
-  padding-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-.slider-wrapper {
-  margin-top: .5rem;
+slider-wrapper {
+  margin: 1rem;
   position: relative;
   overflow: hidden;
 }
   
 .slides-container {
-  height: calc(80vh / 2);
+  height: calc(100vh - 2rem);
   width: 100%;
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 2rem;
+  scroll-snap-type: x mandatory; /* tilfÃ¸jet for opgave B */
 }
   
 .slide-arrow {
@@ -284,7 +268,7 @@ footer {
   width: 100%;
   height: 100%;
   flex: 1 0 100%;
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* tilfÃ¸jet for opgave B */
 }
   
 .slide:nth-child(1) {
