@@ -1,12 +1,12 @@
 @media (prefers-color-scheme: light) {
 :root {
   --btn: #672e2e;
-  --background: linear-gradient(150deg, #FF512F, #F37335, #F0C27B);
+  --background: linear-gradient(150deg, #cb5f5b, #f1706b, #ffcbc7);
   --header: #672e2e;
   --section: rgba(103, 46, 46, 0.24); 
 }
   .nav-menu.active {
-    background-color: hsla(20, 89%, 58%, 0.8);
+    background-color: hsla(2, 54%, 61%, 0.9);
   }
 
   body {
