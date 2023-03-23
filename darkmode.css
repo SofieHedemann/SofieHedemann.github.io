@@ -1,16 +1,18 @@
 @media (prefers-color-scheme: dark) {
     :root {
-      --btn: #002b55;
-      --background: linear-gradient(#0F2027, #203A43, #2C5364);
-      --secondary-background: #203A43;
-      --header: #002b55;
-      --section: #b3b3b34a;
+       /* FARVER */
+      --background: #1C1B1F;
+      --neutral: #49454F;
+      --btn: #141E30;
+
+      --header: #141E30;
+      --section: #b3b3b30d;
+
+      --font: #E6E1E5;
     }  
 
     body {
-      background: var(--background)no-repeat;
-      background-color: lightgray;
-      min-height: 100vh;
+      background: var(--background);
       margin: 1rem;
     }
 
@@ -22,8 +24,36 @@
       color: white;
     }
 
+    p {
+      color: var(--font);
+    }
+  
+    h1 {
+      color: var(--font);
+    }
+  
+    h2 {
+      color: var(--font);
+    }
+
     footer p {
       color: white;
+    }
+
+    .welcome {
+      background: var(--neutral);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      max-width: 100%;
+      gap: 1rem;
+      display: flex;
+      flex-direction: column;
+      border-radius: 6rem;
+      height:80vh;
+      width:80%;
+      margin: 3rem auto;
     }
 
     /* - - - - FORSIDE TEKST - - - - - */
@@ -55,15 +85,12 @@
 
   .welcome__Button {
     background-color: var(--btn);
-    color: #deded9;
+    color: var(--font);
     border: none;
-    border-radius: 44px;
-    font-weight: bold;
+    border-radius: 1rem;
     width: 7rem;
     padding: .5rem;
     cursor: pointer;
-    box-shadow: 1px 8px 32px 1px #141e307a;
-    font-weight: bold;
     font-family: 'Roboto Slab';
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
@@ -71,7 +98,7 @@
 
 
 .welcome__Button:hover {
-    box-shadow: 0 1px 30px #4286f4;
+    box-shadow: 0 2px 6px 2px #141e307a;
     transition-duration: .1s;
   }
 
@@ -90,7 +117,7 @@
   }
 
 .circle {
-    background: conic-gradient(from 180deg, #ce8172, #b97467, #a5675b);
+    background: conic-gradient(from 180deg, #485563, #29323c);
     height: 110px;
     width: 110px;
     border-radius: 50%;

@@ -1,23 +1,56 @@
 @media (prefers-color-scheme: light) {
 :root {
-  --btn: #672e2e;
-  --background: linear-gradient(150deg, #cb5f5b, #f1706b, #ffcbc7);
-  --header: #672e2e;
+  /* FARVER */
+  --background:#E7E0EC;
+  --neutral: #6650a414;
+
+  --btn: #D2564A;
+
+  --header: #D2564A;
   --section: rgba(103, 46, 46, 0.24); 
+
+  --font10: #1C1B1F;
 }
   .nav-menu.active {
     background-color: hsla(2, 54%, 61%, 0.9);
   }
 
   body {
-    background: var(--background) no-repeat;
-    background-color: lightgray;
-    min-height: 100vh;
+    background: var(--background);
     margin: 1rem;
-    
   }
 
+  p {
+    color: var(--font10);
+  }
+
+  h1 {
+    color: var(--font10);
+  }
+
+  h2 {
+    color: var(--font10);
+  }
+
+
   /* - - - - - forside tekst - - - - - */
+
+  .welcome {
+    background: var(--neutral);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    max-width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6rem;
+    height:80vh;
+    width:80%;
+    margin: 3rem auto;
+  }
+
   .welcome__text {
     display: flex;
     flex-direction: column;
@@ -32,7 +65,6 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 3rem; 
-    color: #faeceb;
   }
 
   
@@ -45,22 +77,18 @@
 
   .welcome__Button {
     background-color: var(--btn);
-    color: #deded9;
+    color: white;
     border: none;
-    border-radius: 24px;
-    font-weight: bold;
+    border-radius: 1rem;
     width: 7rem;
     padding: .5rem;
     cursor: pointer;
-    box-shadow: 1px 8px 32px 1px #c25142;
-    font-weight: bold;
     font-family: 'Roboto Slab';
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
   }
 
   .welcome__Button:hover {
-    box-shadow: 0 1px 30px #F08080;
+    box-shadow: 0 2px 6px 2px lightgray;
     transition-duration: .1s;
   }
 
