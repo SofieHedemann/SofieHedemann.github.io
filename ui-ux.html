@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lightmode.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Profil</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html"><img class="nav-logo" src="images/logo.png" alt="pink folder with a mouse tapping on SKH; creators initials" srcset=""></a>
+            <ul class="nav-menu nav-menu--day nav-menu--night">
+                <li class="nav-item">
+                    <a href="frontpage.html" class="nav-link">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a href="profil.html" class="nav-link">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ui-ux.html" class="nav-link">UI / UX</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <h1>UI / UX</h1>
+
+    <section class="trends">
+        <h2>Trends</h2>
+        <img src="images/minimalism.png" alt="">
+        <img src="images/oldschool-windows.png" alt="">
+        <img src="images/darkmode.png" alt="">
+    </section>
+
+    <section class="designSystem">
+        <h2>Design Systems</h2>
+        <h3>Buttons</h3>
+        <h4>Google's material design</h4>
+            <h5>Se Figur 1</h5>
+            <p class="designSystem__body">Google hare 5 forskellige common knapper. Knapperne har meget runde hjørner. 
+
+            Ifølge Google's material design, vil de anbefale følgende, når det kommer til knapper...
+            Alt med måde - jo få knapper jo bedre, hvis der er for mange knapper kan det have
+            negativ indflydelse på ens visuelle hieraki. Knappen skal gerne kommunikere
+            diskrette handlinger klart og tydeligt. Hvis man har for mange knapper i samme område, 
+            vil de anbefale at man putter de mindre vigtige knapper i en overflow menu (de tre prikker i
+            en vertikal linje) eller som ikon knapper. 
+            Knappens vidde skal dynamisk passe til teksten (altså, vidden skal være længere end teksten)
+            Hvis man fx har en knap i et kort design, kan man også justere bredden til at optage hele pladsen (horisontalt)</p>
+        <h4>Knappens opbygning</h4>
+            <h5>Se figur 1.3</h5>
+            <ul>
+                <li>Label tekst
+                    <li class="circleList">Det vigtige element i en knap - det skal meget gerne beskrive handlingen klart og præcist. Hvor skal man guide brugeren hen?</li>
+                    <li class="circleList"><strong>Do:</strong> Meget gerne begynd med stort bogstav og med et meget passende navneord</li>
+                    <li class="circleList"><strong>Don't:</strong> Lad vær med at ombryde teksten - hold den meget gerne på én linje, da dette vil øge læsbarheden markant.</li>
+                </li>
+                <li>Container
+                    <li class="circleList">Containeren vil indeholde ens label tekst og obligatoriske ikon. Google anbefaler 100% runde hjørner</li>
+                    <li class="circleList">Tekst knapper har en synlig container i hover/focused/pressed tilstand</li> 
+                </li>
+                <li>Icon (optional)
+                    <li class="circleList">Rent visuelt så kan ikoner hjælpe med at formidle knappens action endnu mere og hjælpe med med at drage opmærksomheden hen på den. Den bør meget gerne være på venstre side af knappen - før label tekst. I sprog, hvor tekst læses fra højre til venstre, vil ikonet blive placeret til højre i stedet </li>
+                </li>
+            </ul>
+
+            <section class="figures">
+                <figure>
+                    <img src="images/figur1.png" alt="">
+                    <figcaption>
+                        Figur 1 
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/figur2.png" alt="">
+                    <figcaption>
+                        Figur 2
+                    </figcaption>
+                </figure>
+            </section>
+    </section>
+
+    <h2>Design System</h2>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYLxYbR" data-user="LlamaInWonderland" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+        <span>See the Pen <a href="https://codepen.io/LlamaInWonderland/pen/eYLxYbR">
+        Buttons</a> by Sofie (<a href="https://codepen.io/LlamaInWonderland">@LlamaInWonderland</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>
