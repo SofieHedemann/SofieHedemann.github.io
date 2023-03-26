@@ -27,24 +27,15 @@
       color: white;
     }
 
-    p {
+    h1, h2, h3, h4, h5, p, li, a, figcaption {
       color: var(--font);
-    }
+    } 
   
-    h1 {
-      color: var(--font);
-    }
-  
-    h2 {
-      color: var(--font);
-    }
-
     .bar {
       background-color: var(--font);
     }
-
-    a {
-      color: var(--font);
+    .bar {
+      background-color: var(--font);
     }
 
     .welcome {

@@ -35,7 +35,8 @@
         </nav>
     </header>
 
-    <h1>UI / UX</h1>
+    <h1 class="ui-ux">UI / UX</h1>
+        <p class="ui-ux__text">For at læse om design principperne, så tryk <a href="design-principper.html">her</a>.</p>
 
     <section class="trends">
         <h2>Trends</h2>
@@ -89,16 +90,53 @@
                         Figur 2
                     </figcaption>
                 </figure>
+                <figure>
+                    <img src="images/apple-material-design.png" alt="">
+                    <figcaption>
+                        Figur 3
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h4>Apple's Material Design</h4>
+                <h5>Se figur 3</h5>
+                <p>Alt efter hvilken størrelse du arbejder med (mobil, tablet, computer) vil knapperne 
+                    have et forskelligt look - fx 
+                    i de små + mellem størrelser vil knapperne have runde hjørner. I den store størrelse, vil knapperne være mere firkantet med lidt  rundede hjørner.
+                    
+                    Ifølge Apple, en knap på en touchscreen skal have en størrelse på 44 x 44px for at tage højde for tommelfingre. På alle størrelse er det vigtigt at 
+                    inkludere nok plads rundt om knappen og de andre elementer, så brugeren kan se forskel på knap og andet indhold.
+                    
+                    Ens knapper skal klart og tydeligt kommunikere sit formål i form af tekst, ikon eller begge dele på én gang.
+                
+                    Knapperne har også 4 forskellige roler, såsom...</p>
+                    <ul>
+                        <li>Normal - ingen specifik mening</li>
+                        <li>Primary - Default knap - den knap folk som regel vil trykke på </li>
+                        <li>Cancel - Knappen vil annullere den nuværende handling</li>
+                        <li> Destructive - Knappen vil udføre en handling, som vil destruere ens data. Lidt ligesom Cookie Monster, som spiser alle småkagerne, hvor småkagerne er ens data</li>
+                    </ul>
             </section>
     </section>
 
-    <h2>Design System</h2>
-    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYLxYbR" data-user="LlamaInWonderland" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-        <span>See the Pen <a href="https://codepen.io/LlamaInWonderland/pen/eYLxYbR">
-        Buttons</a> by Sofie (<a href="https://codepen.io/LlamaInWonderland">@LlamaInWonderland</a>)
-        on <a href="https://codepen.io">CodePen</a>.</span>
-      </p>
-      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <section class="customProperties">
+        <h2>Design System in action</h2>
+        <h3>Custom Properties</h3>
+        <p>Customer Properties bruges i ens CSS stylingsheet til gentagende farver, størrelser, og afstande (proximity) på ens hjemmeside. 
+
+            Dette kan gøres ved at deklarerer dem i ens root { }. 
+            
+            For at gøre bruge af dem i ens CSS elementer (fx i color, margin, padding, background-color), så skal man gøre brug af var(navn på farven/størrelsen/afstanden).  
+            
+            Jeg vil gerne præsentere min meget simple button-design. Jeg tager udgangspunkt i Google's Material Design farveskema.</p>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYLxYbR" data-user="LlamaInWonderland" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/LlamaInWonderland/pen/eYLxYbR">
+            Buttons</a> by Sofie (<a href="https://codepen.io/LlamaInWonderland">@LlamaInWonderland</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </section>
 
     <script src="hamburger.js"></script>
 </body>
