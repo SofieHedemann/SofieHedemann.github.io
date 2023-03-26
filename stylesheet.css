@@ -77,6 +77,10 @@ a {
   cursor: pointer;
 }
 
+.ui-ux__link {
+  border-bottom: thin solid white;
+}
+
 figcaption {
   font-family: 'Roboto Slab', serif;
 }
@@ -446,6 +450,7 @@ margin-bottom: .5rem;
 
   .designSystem ul {
     margin-bottom: .5rem;
+    margin-left: 1rem; 
   }
 
   .designSystem h3 {
@@ -473,6 +478,10 @@ margin-bottom: .5rem;
     gap: 1rem;
   }
 
+  figure {
+    margin: auto;
+  }
+
   figcaption {
     text-align: center;
   }
@@ -489,9 +498,83 @@ margin-bottom: .5rem;
     max-width: 100%;
   }
 
+  .process {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spaceSmall);
+
+    margin-bottom: var(--spaceMedium);
+  }
+
+  .customProperties {
+    margin-bottom: var(--spaceMedium);
+  }
+
+  .inspiration {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spaceSmall);
+
+    margin-bottom: var(--spaceMedium);
+  }
+
+  .redesign {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spaceSmall);
+
+    margin-bottom: var(--spaceMedium);
+  }
+
+  .process--img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .process--imgFill {
+    width: 100%;
+  }
+
+  /* - - - - - - DESIGN PRINCIPPER - - - - - - - - */
+  .gestalt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--fontSizeSmall);
+    margin-bottom: var(--fontSizeMedium);
+  }
+
+  .gestalt__header {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .gestalt__text {
+    grid-column-start: 1;
+  }
+
   .gestalt__image {
     max-width: 100%;
     width: 100%;
   }
 
+  .proximity {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--fontSizeSmall);
+    margin-bottom: var(--fontSizeMedium);
+  }
+
+  .proximity__header {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .proximity__text {
+    grid-column-start: 2;
+  }
+
+  .proximity__image {
+    width: 100%;
+    grid-row-start: 2;
+  }
 }

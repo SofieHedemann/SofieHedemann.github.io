@@ -36,7 +36,7 @@
     </header>
 
     <h1 class="ui-ux">UI / UX</h1>
-        <p class="ui-ux__text">For at læse om design principperne, så tryk <a href="design-principper.html">her</a>.</p>
+        <p class="ui-ux__text">For at læse om design principperne, så tryk <a class="ui-ux__link" href="design-principper.html">her</a>.</p>
 
     <section class="trends">
         <h2>Trends</h2>
@@ -136,6 +136,39 @@
             on <a href="https://codepen.io">CodePen</a>.</span>
         </p>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </section>
+
+    <section class="process">
+        <h2>Process & Principles</h2>
+        <h3>Show design issues in UI by analysing a design based upon design principles</h3>
+        <p>Jeg har udvalgt beamii.dk's scroll-menu til at analysere på.</p>
+        <img class="process--imgFill" src="images/design-process-1.png" alt="">
+        <p>Konstrasten er elendig. Den mørke baggrund kombineret med den blå skrift gør det meget 
+            svært at læse hvad der står. Dette er gældende for BeaMii-logo, header, og om BeaMii.</p>
+        <img class="process--imgFill" src="images/sort-hvid1.png" alt="">
+        <p>Ved at gøre den sort/hvid vil det blive mere tydeligt hvor svært det er at læse.</p>
+        <img class="process--img" src="images/OG-contrast-1.png" alt="">
+        <img class="process--img" src="images/OG-contrast-2.png" alt="">
+        <p>De blå links har en contrast på 3.57 og Om BeaMii har en contrast på 2.01. 
+
+            Ifølge W3C - web accesibility - så skal overskrifter have en score på minimum 3:1, hvorimod 
+            alm. brødtekster / tekst have en score på minimum 4:5:1. Så vores scroll-menu fejler stort på denne 
+            front. 
+            <a class="ui-ux__link" href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html" target="_blank">Source</a></p>
+    </section>
+
+    <section class="inspiration">
+        <h3>Inspiration</h3>
+        <p>Her er der blevet kigget på, hvordan andre sider gør det.</p>
+        <img class="process--imgFill" src="images/inspiration1.png" alt="">
+        <img class="process--imgFill" src="images/inspiration2.png" alt="">
+    </section>
+
+    <section class="redesign">
+        <h3>Redesign</h3>
+        <img class="process--imgFill" src="images/redesign.png" alt="">
+        <img class="process--img" src="images/redesign-contrast1.png" alt="">
+        <img class="process--img" src="images/redesign-contrast2.png" alt="">
     </section>
 
     <script src="hamburger.js"></script>
