@@ -170,7 +170,11 @@ margin-bottom: .5rem;
 }
 
 .codepen {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spaceLarge);
+}
+
+.datatypes {
+  margin-bottom: var(--spaceLarge);
 }
 
 /* - - - - - MEDIA QUERIES - - - - - */
@@ -334,6 +338,9 @@ margin-bottom: .5rem;
     line-height: 1.5;
   }
 
+  .datatypes {
+    margin-bottom: var(--spaceMedium);
+  }
 }
 
 @media screen and (min-width:701px) and (max-width: 901px){
