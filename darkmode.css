@@ -127,4 +127,9 @@
     background-color: var(--cards);
     height: 250px;
   }
+
+  /* - - - - javascript - - - -  */
+  .td-b {
+    color: var(--font);
+  }
   }
