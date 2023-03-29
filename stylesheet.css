@@ -157,6 +157,31 @@ footer {
 }
 
 /* - - - - - JAVASCRIPT - - - - - - */
+
+/* - - - Table - - - */
+
+thead, th {
+  background-color: #36393e;
+  color: white;
+  padding: .5rem;
+}
+
+
+.td-a {
+  padding: .5rem;
+  background-color: #36393e;
+  color: white;
+}
+
+.td-b {
+  padding-left: .25rem;
+  border-bottom: 1px solid #36393e;
+}
+
+table {
+  width: 100%;
+}
+
 /* codepen */
 .js--largerHeader {
   margin-bottom: .5rem;
@@ -174,7 +199,7 @@ footer {
     margin-bottom: var(--spaceLarge);
   }
   
-  .datatypes {
+  .js__examples {
     margin-bottom: var(--spaceLarge);
   }
 
