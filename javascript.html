@@ -55,27 +55,27 @@
                 </thead>
                 <tr>
                     <td class="td-a">String</td>
-                    <td class="td-b">Tekst-streng - sættes i anførselstegn (' ' eller " "). </td>
+                    <td>Tekst-streng - sættes i anførselstegn (' ' eller " "). </td>
                 </tr>
                 <tr>
                     <td class="td-a">Number</td>
-                    <td class="td-b">Tal, alle tal. Selv decimal tal!</td>
+                    <td>Tal, alle tal. Selv decimal tal!</td>
                 </tr>
                 <tr>
                     <td class="td-a">Boolean</td>
-                    <td class="td-b">True / False</td>
+                    <td>True / False</td>
                 </tr>
                 <tr>
                     <td class="td-a">Symbol</td>
-                    <td class="td-b">Unik identifikatorer (ifølge mine noter, så er dette semi kompleks?)</td>
+                    <td>Unik identifikatorer (ifølge mine noter, så er dette semi kompleks?)</td>
                 </tr>
                 <tr>
                     <td class="td-a">Object</td>
-                    <td class="td-b">En kollektion af data, som er relateret til hinanden</td>
+                    <td>En kollektion af data, som er relateret til hinanden</td>
                 </tr>
                 <tr>
                     <td class="td-a">Undefined</td>
-                    <td class="td-b">Værdien eksisterer ikke</td>
+                    <td>Værdien eksisterer ikke</td>
                 </tr>
                 <tr>
                     <td class="td-a">Null</td>
@@ -175,13 +175,72 @@
             <li>For - hvis man gerne vil loope en kode en specifik antal gange</li>
             <li>While - Hvis man ikke er sikker på hvor mange gange, man gerne vil have ens loop til at løbe. Den vil bare fortsætte mens ens betingelser er true</li>
             <li>Do While - Fungerer lidt på samme måde som while, bortset fra at den vil altid vil loope ens statements i ens turborg klammer mindst én gang, selvom ens betingelse er false</li>
-            <h3>Eksempel</h3>
-            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jOvorgo" data-user="LlamaInWonderland" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                <span>See the Pen <a href="https://codepen.io/LlamaInWonderland/pen/jOvorgo">
-                loops</a> by Sofie (<a href="https://codepen.io/LlamaInWonderland">@LlamaInWonderland</a>)
-                on <a href="https://codepen.io">CodePen</a>.</span>
-              </p>
-              <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <h3>Standard Loop</h3>
+                <p>Her gør man brug af i som står for Index, og vil være ens loop variable. </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="6">Standard Loop<br></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>for(</td>
+                                <td>let i = 0</td>
+                                <td>;</td>
+                                <td>i &lt; 5;</td>
+                                <td>i++</td>
+                                <td>)</td>
+                            </tr>
+                        <tr>
+                            <td class="td-b"></td>
+                            <td class="td-b">værdien er lig med 0</td>
+                            <td class="td-b">terminate/end the statement</td>
+                            <td class="td-b">condition - sammenligner værdien med noget andet. Ens loop vil løbe så længe denne værdig er true. Så længe ens loop værdig er mindre end fem, vil den løbe.</td>
+                            <td class="td-b">incrementExpression - når ens loop har løbet den første runde, så tilføjer de én (+1) indtil den den når op på ens condition.</td>
+                            <td class="td-b"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>for...in loop ~ vi looper igennem et array</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="6">For...in Loop<br></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>for(</td>
+                                    <td>let i = 0</td>
+                                    <td>;</td>
+                                    <td>i < name.length;</td>
+                                    <td>i++</td>
+                                    <td>)</td>
+                                </tr>
+                            <tr>
+                                <td class="td-b"></td>
+                                <td class="td-b">værdien er lig med 0</td>
+                                <td class="td-b">terminate/end the statement</td>
+                                <td class="td-b">condition - den vil loope så længe i - værdien er mindre end ens <strong>name.length</strong> array</td>
+                                <td class="td-b">incrementExpression - når ens loop har løbet den første runde, så tilføjer de én (+1) indtil den den når op på ens condition.</td>
+                                <td class="td-b"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <p>Det ovenstående kan også skrives på følgende måde:</p>
+                        <p>for(let i in name) {</p>
+                        <p>console.log(name[i]);</p>
+                        <p>}</p>
+
+
+                    <h3>for...of loop ~ looper igennem et object</h3>
+
+
+                    <h3>forEach loop ~ looper igennem endnu et array</h3>
+                <h3>Eksempel</h3>
         </section>
 
 

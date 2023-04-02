@@ -160,6 +160,10 @@ footer {
 
 /* - - - Table - - - */
 
+table {
+  border: thin solid black;
+}
+
 thead, th {
   background-color: #36393e;
   color: white;
@@ -173,8 +177,13 @@ thead, th {
 }
 
 .td-b {
-  padding-left: .25rem;
-  border-bottom: 1px solid #36393e;
+  border-bottom: none;
+
+}
+
+td {
+  border-bottom: thin black solid;
+  text-align: center;
 }
 
 table {
