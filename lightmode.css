@@ -4,13 +4,13 @@
   --cards: #E7E0EC; 
 
   /* FARVER */
-  --background: #FFFBFE;
-  --neutral-variant90: #E7E0EC;
+  --background: #ede3d8;
+  --screen: rgba(216, 226, 237, 0.6);
 
-  --btn: #D2564A;
+  --btn: #918936;
 
-  --header: #D2564A;
-  --section: rgba(103, 46, 46, 0.24); 
+  --header: #918936;
+  --section: rgba(103, 46, 46, 0.6); 
 
   --font10: #1C1B1F;
 }
@@ -20,7 +20,6 @@
 
   body {
     background: var(--background);
-    margin: 1rem;
   }
 
   h1, h2, h3, h4, h5, p, li, a, figcaption {
@@ -34,41 +33,11 @@
   /* - - - - - forside tekst - - - - - */
 
   .welcome {
-    background: var(--neutral-variant90);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    max-width: 100%;
-    gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 6rem;
-    height:80vh;
-    width:80%;
-    margin: 3rem auto;
+    background: var(--screen);
   }
-
-  .welcome__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    height: 100vh;
-    margin: 1rem;
-  }
-
-.welcome__header {
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 3rem; 
-  }
-
   
-.welcome__body {
+  .welcome__body {
     font-weight: 400;
-    color: #faeceb;
   }
 
   /* - - - - - forside - - - - - */
@@ -76,13 +45,6 @@
   .welcome__Button {
     background-color: var(--btn);
     color: white;
-    border: none;
-    border-radius: 1rem;
-    width: 7rem;
-    padding: .5rem;
-    cursor: pointer;
-    font-family: 'Roboto Slab';
-    transition: all .5s;
   }
 
   .welcome__Button:hover {
@@ -90,33 +52,34 @@
     transition-duration: .1s;
   }
 
-.welcome__rectangel {
+  .welcome__rectangel {
     background-color: var(--header);
-    height: 80vh;
-    position: absolute;
-    width:171px;
-    border-radius:0px 72px 72px 0px;
-    align-self: end;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
   }
 
-.circle {
-    background: conic-gradient(from 180deg, #ce8172, #b97467, #a5675b);
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 12px 0 var(--section);
+  .circle {
+    background: conic-gradient(from 180deg, #83664b, #745a42, #664f3a);
   }
 
-  /* HTML OVERVIEW PAGE */
+  /* - - - - - HTML OVERVIEW PAGE - - - - - */
   .card {
     background-color: var(--cards);
-    height: 250px;
   }
 
+  .ui-ux__link {
+    border-bottom: thin solid black;
+  }
+
+  /* DESIGN PRINCIPPER */
+  .gestalt {
+    background-color: ;
+  }
+
+  .proxmity {
+    background-color: ;
+  }
+
+  .similarity {
+    background-color: ;
+  }
 }
 

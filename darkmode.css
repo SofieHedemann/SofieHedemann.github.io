@@ -4,11 +4,11 @@
       --cards: rgba(189, 189, 189, 0.2);
 
        /* FARVER */
-      --background: #1C1B1F;
+      --background: #29282a;
       --neutral: #49454F;
-      --btn: #141E30;
+      --btn: #202A44;
 
-      --header: #141E30;
+      --header: #202A44;
       --section: #b3b3b30d;
 
       --font: #E6E1E5;
@@ -16,7 +16,6 @@
 
     body {
       background: var(--background);
-      margin: 1rem;
     }
 
     .nav-menu.active {
@@ -40,43 +39,16 @@
 
     .welcome {
       background: var(--neutral);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      max-width: 100%;
-      gap: 1rem;
-      display: flex;
-      flex-direction: column;
-      border-radius: 6rem;
-      height:80vh;
-      width:80%;
-      margin: 3rem auto;
     }
 
     /* - - - - FORSIDE TEKST - - - - - */
-  .welcome__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    height: 100vh;
-    margin: 1rem;
+
+  .welcome__header {
+    color: var(--font);
   }
 
-.welcome__header {
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 3rem; 
-    color: #faeceb;
-  }
-
-.welcome__body {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    color: #faeceb;
+  .welcome__body {
+    color: var(--font);
   }
 
   /* - - - - - forside - - - - - */
@@ -84,34 +56,18 @@
   .welcome__Button {
     background-color: var(--btn);
     color: var(--font);
-    border: none;
-    border-radius: 1rem;
-    width: 7rem;
-    padding: .5rem;
-    cursor: pointer;
-    font-family: 'Roboto Slab';
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
     transition: all .5s;
   }
 
 
-.welcome__Button:hover {
+  .welcome__Button:hover {
     box-shadow: 0 2px 6px 2px #141e307a;
     transition-duration: .1s;
   }
 
-.welcome__rectangel {
+  .welcome__rectangel {
     background-color: var(--header);
-    height: 80vh;
-    position: absolute;
-    width:171px;
-    border-radius:0px 72px 72px 0px;
-    align-self: end;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
   }
 
 .circle {
@@ -131,5 +87,9 @@
   /* - - - - javascript - - - -  */
   .td-b {
     color: var(--font);
+  }
+
+  .ui-ux__link {
+    border-bottom: thin solid white;
   }
   }

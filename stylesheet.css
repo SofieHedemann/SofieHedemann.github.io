@@ -6,10 +6,13 @@
  --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
  --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
  --fontSizeMedium: 1rem;
- --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
- --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
+ --fontSizeLarge: calc(var(--fontSizeMedium)*1.1);
+ --fontSizeXLarge: calc(var(--fontSizeMedium)*1.2);
+ --fontSizeXXLarge: calc(var(--fontSizeMedium)*1.5);
+ --fontSizeXXXLarge: calc(var(--fontSizeMedium)*2.5);    
 
  /* Spacing */
+ --spaceXXSmall: calc(var(--spaceMedium)/4);
  --spaceXSmall: calc(var(--spaceMedium)/2);
  --spaceSmall: calc(var(--spaceMedium)/1.5);
  --spaceMedium: 1rem;
@@ -23,6 +26,125 @@
   padding: 0;
 }
 
+body {
+  margin: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Hanken Grotesk', sans-serif;
+} 
+
+h1 {
+  font-size: var(--fontSizeXXXLarge)
+}
+
+h2 {
+  font-size: var(--fontSizeXXLarge)
+}
+
+h3 {
+  font-size: var(--fontSizeXLarge)
+}
+
+h4 {
+  font-size: var(--fontSizeLarge);
+  letter-spacing: .5px;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+
+a {
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+figcaption {
+  font-family: 'Roboto Slab', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* - - - - - INDEX - - - - - - */
+
+.welcome {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  max-width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6rem;
+  height:80vh;
+  width:80%;
+  margin: 3rem auto;
+}
+
+.welcome__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  margin: 1rem;
+}
+
+.welcome__body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.welcome__header {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: var(--fontSizeXLarge); 
+}
+
+.welcome__rectangel {
+  height: 80vh;
+  position: absolute;
+  width:171px;
+  border-radius:0px 72px 72px 0px;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px 0 var(--section);
+}
+
+.welcome__Button {
+  border: none;
+  border-radius: 1rem;
+  width: 7rem;
+  padding: .5rem;
+  cursor: pointer;
+  font-family: 'Roboto Slab';
+  transition: all .5s;
+}
+
+/* - - - - - NAV BAR - - - - - */
 .nav-logo {
   width: 44px;
 }
@@ -56,35 +178,6 @@
   margin-left: 5rem;
   list-style-type: none;
 }
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Hanken Grotesk', sans-serif;
-} 
-
-p {
-  font-family: 'Roboto Slab', serif;
-  line-height: 1.5;
-}
-
-li {
-  font-family: 'Roboto Slab', serif;
-  line-height: 1.5;
-}
-
-a {
-  font-family: 'Roboto Slab', serif;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.ui-ux__link {
-  border-bottom: thin solid white;
-}
-
-figcaption {
-  font-family: 'Roboto Slab', serif;
-}
-
 
 /* Footer */
 footer {
@@ -212,6 +305,57 @@ table {
     margin-bottom: var(--spaceLarge);
   }
 
+
+  /* - - - - - UI / UX - - - - - */
+  .trends {
+    margin-top: var(--spaceXSmall);
+  }
+
+  /* - - - - - DESIGN PRINCIPPER - - - - - */
+
+  .lawsofUI {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "gestalt proximity similarity";
+
+    gap: 1rem;
+  }
+
+  .gestalt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .proximity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .similarity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .design__image {
+    width: 100%;
+  }
+
+  .design__principles {
+    margin-bottom: var(--spaceMedium);
+    margin-top: var(--spaceXSmall);
+  }
+
+  .design--body {
+    margin-bottom: var(--fontSizeSmall);
+  }
+
+  .ui-ux__link {
+    margin-top: var(--spaceXSmall);
+  }
 
 /* - - - - - MEDIA QUERIES - - - - - */
 @media screen and (min-width:325px) and (max-width: 700px) {
@@ -341,7 +485,6 @@ table {
 
   .circleList {
     list-style-type: circle;
-    margin-left: .8rem;
   }
 
   .figures {
@@ -510,7 +653,6 @@ table {
 
   .circleList {
     list-style-type: circle;
-    margin-left: .8rem;
   }
 
   .figures {
@@ -579,45 +721,16 @@ table {
   }
 
   /* - - - - - - DESIGN PRINCIPPER - - - - - - - - */
-  .gestalt {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--fontSizeSmall);
-    margin-bottom: var(--fontSizeMedium);
+  .design__principles {
+    margin-bottom: var(--spaceMedium);
   }
 
-  .gestalt__header {
-    grid-column-start: 1;
-    grid-row-start: 1;
-  }
+  .design__image {
+    width: 40%;
+    margin: auto;
 
-  .gestalt__text {
-    grid-column-start: 1;
-  }
-
-  .gestalt__image {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .proximity {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--fontSizeSmall);
-    margin-bottom: var(--fontSizeMedium);
-  }
-
-  .proximity__header {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .proximity__text {
-    grid-column-start: 2;
-  }
-
-  .proximity__image {
-    width: 100%;
-    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
