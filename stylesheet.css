@@ -219,8 +219,21 @@ footer {
   
 .projects__image {
   max-width: 100%;
+  width: 100%;
 }
 
+/* - - - - - Galleri - - - - - */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: var(--spaceXSmall);
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom:var(--spaceLarge);
+}
 
 /* - - - - - HTML PAGE - - - - - */
 
