@@ -5,7 +5,7 @@
 
   /* FARVER */
   --background: #ede3d8;
-  --screen: rgba(216, 226, 237, 0.6);
+  --screen: rgba(216, 226, 237, 0.3);
 
   --btn: #918936;
 
@@ -34,6 +34,7 @@
 
   .welcome {
     background: var(--screen);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
   
   .welcome__body {
@@ -71,15 +72,18 @@
 
   /* DESIGN PRINCIPPER */
   .gestalt {
-    background-color: ;
+    background-color: var(--screen);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
-  .proxmity {
-    background-color: ;
+  .proximity {
+    background-color: var(--screen);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 
   .similarity {
-    background-color: ;
+    background-color: var(--screen);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
 }
 

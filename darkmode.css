@@ -5,7 +5,7 @@
 
        /* FARVER */
       --background: #29282a;
-      --neutral: #49454F;
+      --screen: #49454F;
       --btn: #202A44;
 
       --header: #202A44;
@@ -38,7 +38,7 @@
     }
 
     .welcome {
-      background: var(--neutral);
+      background: var(--screen);
     }
 
     /* - - - - FORSIDE TEKST - - - - - */
@@ -92,4 +92,20 @@
   .ui-ux__link {
     border-bottom: thin solid white;
   }
+
+    /* DESIGN PRINCIPPER */
+    .gestalt {
+      background-color: var(--screen);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+  
+    .proximity {
+      background-color: var(--screen);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+  
+    .similarity {
+      background-color: var(--screen);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
   }
