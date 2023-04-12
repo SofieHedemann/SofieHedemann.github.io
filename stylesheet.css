@@ -225,14 +225,16 @@ footer {
 /* - - - - - Galleri - - - - - */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: var(--spaceXSmall);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom:var(--spaceLarge);
 }
 
 .gallery img {
-  width: 100%;
-  margin-bottom:var(--spaceLarge);
+  width: 150px;
 }
 
 /* - - - - - HTML PAGE - - - - - */
