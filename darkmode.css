@@ -37,47 +37,6 @@
       background-color: var(--font);
     }
 
-    .welcome {
-      background: var(--screen);
-    }
-
-    /* - - - - FORSIDE TEKST - - - - - */
-
-  .welcome__header {
-    color: var(--font);
-  }
-
-  .welcome__body {
-    color: var(--font);
-  }
-
-  /* - - - - - forside - - - - - */
-
-  .welcome__Button {
-    background-color: var(--btn);
-    color: var(--font);
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
-  }
-
-
-  .welcome__Button:hover {
-    box-shadow: 0 2px 6px 2px #141e307a;
-    transition-duration: .1s;
-  }
-
-  .welcome__rectangel {
-    background-color: var(--header);
-  }
-
-.circle {
-    background: conic-gradient(from 180deg, #485563, #29323c);
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 12px 0 var(--section);
-  }
-
   /* HTML OVERVIEW PAGE */
   .html__items {
     background-color: var(--cards);
@@ -85,8 +44,13 @@
   }
 
   /* - - - - javascript - - - -  */
-  .td-b {
+
+  td {
     color: var(--font);
+  }
+
+  table {
+    border: thin solid #808080;
   }
 
   .ui-ux__link {

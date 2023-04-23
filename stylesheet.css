@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;700&family=Roboto+Slab:wght@200;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 
 /* ROOT */
 :root {
@@ -31,7 +33,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 } 
 
 h1 {
@@ -52,106 +54,42 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;  
   line-height: 1.5;
 }
 
 li {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   line-height: 1.5;
   margin-left: 1rem;
 }
 
 a {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   text-decoration: none;
   cursor: pointer;
 }
 
 figcaption {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 img {
   max-width: 100%;
 }
 
-/* - - - - - INDEX - - - - - - */
-
-.welcome {
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  max-width: 100%;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  border-radius: 6rem;
-  height:80vh;
-  width:80%;
-  margin: 3rem auto;
-}
-
-.welcome__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  height: 100vh;
-  margin: 1rem;
-}
-
-.welcome__body {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-}
-
-.welcome__header {
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: var(--fontSizeXLarge); 
-}
-
-.welcome__rectangel {
-  height: 80vh;
-  position: absolute;
-  width:171px;
-  border-radius:0px 72px 72px 0px;
-  align-self: end;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.circle {
-  height: 110px;
-  width: 110px;
-  border-radius: 50%;
-  box-shadow: 0px 3px 12px 0 var(--section);
-}
-
-.welcome__Button {
-  border: none;
-  border-radius: 1rem;
-  width: 7rem;
-  padding: .5rem;
-  cursor: pointer;
-  font-family: 'Roboto Slab';
-  transition: all .5s;
-}
 
 /* - - - - - NAV BAR - - - - - */
 .nav-logo {
-  width: 44px;
+  width: 100px;
+  position: relative;
+  top: .5rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .hamburger {
@@ -174,8 +112,69 @@ img {
 }
 
 .nav-item {
-  margin-left: 5rem;
   list-style-type: none;
+  margin-left: 2rem;
+}
+
+/* Slider på forside */
+
+.index__header {
+  font-family: 'Chela One', cursive;
+
+  position: absolute;
+  top: 600px;
+  color: #e85112;
+  background: rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  width: 300px;
+  height: 100px;
+  padding: 1rem;
+
+  text-align: center;
+}
+
+.gallery {
+  width: 100%;
+
+  margin: 0;
+}
+
+.container {
+ height: 80vh;
+ width: 100%;
+ display: flex;
+ overflow: scroll;
+ scroll-behavior: smooth;
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ scroll-snap-type: x mandatory;
+ overflow: hidden;
+} 
+
+
+.slide {
+  width: 100%;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+} 
+
+.slidingGallery {
+  display: flex;
+  gap: .5rem;
+
+  width: 100%;
+
+  overflow-x: scroll;
+}
+
+
+figcaption {
+  text-align: center;
+
+  background: rgb(239, 239, 239, .6);
+  position: relative;
+  bottom: 28px;
 }
 
 /* Footer */
@@ -266,10 +265,6 @@ footer {
 /* - - - - - JAVASCRIPT - - - - - - */
 
 /* - - - Table - - - */
-
-table {
-  border: thin solid black;
-}
 
 thead, th {
   background-color: #36393e;
@@ -383,10 +378,6 @@ table {
 
   .welcome__header {
     font-size: 40px;
-  }
-
-  .welcome__rectangel {
-    visibility: hidden;
   }
 
   .welcome__Button {

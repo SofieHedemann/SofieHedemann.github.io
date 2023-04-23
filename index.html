@@ -7,24 +7,99 @@
     <link rel="stylesheet" href="lightmode.css">
     <link rel="stylesheet" href="darkmode.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="components.css">
     <title>Forside</title>
 </head>
 <body>
 
-<article class="welcome">
-    <section class="welcome__text">
-        <h1>Overskrift</h1>
-        <p>Undertekst hej, dette er min læringsportfolio </p>
-        
-        <form action="frontpage.html">
-            <button id="myBtn" class="welcome__Button">Tryk</button>
-        </form>
-    </section>
-    <section class="welcome__rectangel">
-        <section class="circle"></section>
-        <section class="circle"></section>
-    </section>
-</article>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-menu nav-menu--day nav-menu--night">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Forside</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html"><img class="nav-logo" src="images/logo-circle.png" alt="pink folder with a mouse tapping on SKH; creators initials" srcset=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript.html" class="nav-link">Javascript</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ui-ux.html" class="nav-link">UI / UX</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
 
+<main>
+    <section class="gallery">
+        <div class="container">
+            <img class="slide" src="images/cats.png" alt="">
+            <img class="slide" src="images/cats2.png" alt="">
+            <img class="slide" src="images/dumbo3.png" alt="">
+            <img class="slide" src="images/dumbo4.png" alt="">
+        </div>
+    </section>
+      
+
+    <h1 class="index__header">Dette er en overskrift, hej!</h1>
+    <h2>Portfolio</h2>
+    <section class="slidingGallery">
+        <figure>
+            <img src="images/beamii.png" alt="">
+            <figcaption>Beamii</figcaption>
+        </figure>
+        <figure>
+            <img src="images/macintosh.png" alt="">
+            <figcaption>Macintosh Plus</figcaption>
+        </figure>
+        <figure>
+            <img src="images/hamsterfriend.png" alt="">
+            <figcaption>Friends to Meet</figcaption>
+        </figure>
+        <figure>
+            <img src="images/swipbox.png" alt="">
+            <figcaption>Nærboks</figcaption>
+        </figure>
+        <figure>
+            <img src="images/html.png" alt="">
+            <figcaption>HTML</figcaption>
+        </figure>
+        <figure>
+            <img src="images/css.png" alt="">
+            <figcaption>CSS</figcaption>
+        </figure>
+        <figure>
+            <img src="images/javascript.png" alt="">
+            <figcaption>Javascript</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Javascript</h2>
+
+    </section>
+    <section>
+        <h2>UI / UX</h2>
+    </section>
+</main>
+
+
+<footer>
+    <a href="https://www.linkedin.com/in/sofie-hedemann/">
+        <img class="socialMedia--img" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+    </a>
+    <p>Indsæt SoMe kanaler hernede.</p>
+</footer>
+
+<script src="slider.js"></script>
+<script src="hamburger.js"></script>
 </body>
 </html>
