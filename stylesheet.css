@@ -159,22 +159,37 @@ img {
   scroll-snap-align: start;
 } 
 
-.slidingGallery {
-  display: flex;
-  gap: .5rem;
-
+.slider {
+  display: block;
   width: 100%;
-
+  height: 300px;
   overflow-x: scroll;
+
 }
 
+.slider__container {
+  display: block;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: 255px;
+}
 
 figcaption {
   text-align: center;
 
-  background: rgb(239, 239, 239, .6);
-  position: relative;
-  bottom: 28px;
+  background: #ecedf0;
+  margin-top: 0;
+
+  padding: .1rem 0;
+  width: 100%;
 }
 
 /* Footer */
