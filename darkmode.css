@@ -43,6 +43,11 @@
     height: 250px;
   }
 
+  .card {
+    background-color: var(--screen);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  }
+
   /* - - - - javascript - - - -  */
 
   td {
